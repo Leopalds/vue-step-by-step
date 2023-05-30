@@ -4,7 +4,7 @@ export default {
     `
         <div class="flex gap-2">
             <button 
-                @click="change(tag)" 
+                @click="$emit('update:currentTag', tag)" 
                 v-for="tag in tags"
                 class="border rounded px-1 py-px text-xs"
                 :class="{
@@ -17,16 +17,11 @@ export default {
     `,
     props: {
         'initial-tags': Array,
-        'current-tag': String
+        'currentTag': String
     },
     computed:{
         tags(){
             return ['all', ...new Set(this.initialTags)];
-        }
-    },
-    methods: {
-        change(currentTag){
-            this.$emit('change', currentTag);    
         }
     },
 }
