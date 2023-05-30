@@ -20,7 +20,7 @@
         },
         {
             "name": "Turn in Homerwork",
-            "complete": false,
+            "complete": true,
             "id": 4,
             "tag": "math"
         }
