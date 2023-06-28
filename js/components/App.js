@@ -5,7 +5,9 @@ export default {
     template:
     /*html*/
     `
-        <assignments></assignments>
+        <div class="grid gap-6">
+            <assignments></assignments>
+        </div>
     `,
     
 }

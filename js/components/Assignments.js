@@ -18,7 +18,6 @@ export default {
                 can-toggle
                 @toggle="showCompleted = !showCompleted"
             ></assignment-list>
-            <span>BLA BLA BLA</span>
         </div>
     </section>
     `,
